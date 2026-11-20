@@ -1,7 +1,784 @@
 
-
-
 // const en = {
+//   manufacturingPage: {
+//     "company": {
+//       "name": "Yiwu Chucheng Bags Co., Ltd.",
+//       "location": "Yejia, Gangkou Village, Nanshan Township, Yushan County, Shangrao, Jiangxi, China",
+//       "founded": "Established in 2011"
+//     },
+//     "hero": {
+//       "eyebrow": "THE MANUFACTURING ATELIER",
+//       "title": "Made with purpose.",
+//       "highlight": "Built around your vision.",
+//       "description": "Explore the people, product directions and production conversations behind your next bag collection. From material selection to packing, a clearly defined brief helps us develop a practical manufacturing plan together.",
+//       "primary": "Discuss production",
+//       "secondary": "Explore the process",
+//       "sceneTitle": "Inside the production journey",
+//       "sceneDescription": "Explore a stylized 3D illustration of a bag moving through a production environment. Rotate the scene and select a stage to discover the thinking behind each part of the process.",
+//       "sceneLabel": "Interactive production illustration",
+//       "loading": "Preparing the 3D production scene.",
+//       "fallback": "The 3D scene is unavailable on this device. All production information remains available below.",
+//       "pause": "Pause scene animation",
+//       "play": "Resume scene animation",
+//       "left": "Rotate scene left",
+//       "right": "Rotate scene right",
+//       "stages": [
+//         "Preparation",
+//         "Assembly",
+//         "Packing"
+//       ],
+//       "drag": "Drag to explore the scene"
+//     },
+//     "overview": {
+//       "eyebrow": "OUR COMPANY",
+//       "title": "A factory with people at its heart.",
+//       "description": "Yiwu Chucheng Bags Co., Ltd. was established in 2011. Our manufacturing story combines the development of bags and organizers with a commitment to creating employment opportunities closer to home for local residents.",
+//       "items": [
+//         {
+//           "title": "A clear product conversation",
+//           "description": "We begin by understanding what your bag needs to carry, how it will be used and the appearance you want to achieve."
+//         },
+//         {
+//           "title": "Development with a reference",
+//           "description": "Drawings, photos and samples help establish a shared direction for construction, materials and finishing."
+//         },
+//         {
+//           "title": "A practical manufacturing brief",
+//           "description": "Agreed product specifications, quantities and inspection requirements guide the next stage of your project."
+//         }
+//       ]
+//     },
+//     "statistics": {
+//       "eyebrow": "THE FACTORY AT A GLANCE",
+//       "title": "People, space and production resources.",
+//       "description": "These company figures provide a starting point for understanding our operation. The capacity available for a particular order depends on product complexity, materials and the agreed production schedule.",
+//       "employees": "Employees",
+//       "area": "Factory area",
+//       "regular": "Regular production lines",
+//       "reserve": "Reserve production lines"
+//     },
+//     "categories": {
+//       "eyebrow": "PRODUCT DIRECTIONS",
+//       "title": "A world of bags. A considered approach.",
+//       "description": "Explore our product directions, from EVA cases and cosmetic bags to travel and pet-related bags. The cards illustrate design discussions; confirm the availability and construction of your chosen product with our team.",
+//       "search": "Search production categories",
+//       "clear": "Clear search",
+//       "submit": "Search",
+//       "groups": {
+//         "bags": "Bags",
+//         "cases": "Cases & organizers",
+//         "pet": "Pet travel"
+//       },
+//       "filter": "Product groups",
+//       "results": "Matching categories",
+//       "empty": "No matching categories. Try another search or product group.",
+//       "reset": "Reset filters",
+//       "view": "Explore this direction",
+//       "selected": "Your selected product direction",
+//       "contact": "Discuss this product",
+//       "imageNote": "Design illustration",
+//       "items": {
+//         "eva": {
+//           "name": "EVA Cases",
+//           "description": "Structured cases for organizing and carrying everyday essentials. Share the intended contents so the dimensions, opening and protective construction can be discussed."
+//         },
+//         "pencil": {
+//           "name": "Pencil Cases",
+//           "description": "Compact stationery storage for school, work or creative use. Interior organization and branding can be reviewed around your preferred product direction."
+//         },
+//         "medical": {
+//           "name": "First Aid Bags",
+//           "description": "Storage concepts for organizing first aid supplies. Compartments and identification details should be defined for the intended contents and market."
+//         },
+//         "toiletry": {
+//           "name": "Toiletry Bags",
+//           "description": "Travel-ready organization for personal care essentials. Discuss the opening, lining and pocket arrangement for your preferred use case."
+//         },
+//         "makeup": {
+//           "name": "Makeup & Cosmetic Bags",
+//           "description": "A product direction for everyday beauty routines and travel. Review proportions, brush storage and compartment layouts with your references."
+//         },
+//         "handbags": {
+//           "name": "Handbags",
+//           "description": "Explore a signature silhouette for your collection. Materials, carrying details and finishing choices are developed around the agreed brief."
+//         },
+//         "shoulder": {
+//           "name": "Shoulder Bags",
+//           "description": "A practical carrying direction for daily essentials. Strap arrangement, access and interior space can be reviewed during development."
+//         },
+//         "crossbody": {
+//           "name": "Crossbody Bags",
+//           "description": "Compact organization with a hands-free carrying approach. Share your preferred proportions and strap references to start the discussion."
+//         },
+//         "tote": {
+//           "name": "Tote Bags",
+//           "description": "Roomier bag concepts for everyday carrying and shopping. Discuss structure, handles and organization in relation to your intended load."
+//         },
+//         "party": {
+//           "name": "Party & Evening Bags",
+//           "description": "Occasion-focused designs with a distinctive visual identity. Surface finishes, closures and carrying details are reviewed for the chosen design."
+//         },
+//         "mini": {
+//           "name": "Mini Bags",
+//           "description": "Small-scale designs for a carefully edited set of essentials. Review capacity and access early so the proportions remain useful."
+//         },
+//         "bucket": {
+//           "name": "Bucket Bags",
+//           "description": "Explore a softer, open-volume silhouette for a collection. Discuss the base, closure and lining arrangement with your references."
+//         },
+//         "satchel": {
+//           "name": "Satchel Bags",
+//           "description": "A structured design direction for organized everyday carrying. Review flap proportions, handle placement and interior layout together."
+//         },
+//         "belt": {
+//           "name": "Belt Bags",
+//           "description": "Hands-free carrying concepts for travel and daily activities. Fit, access and strap adjustment should be part of the product brief."
+//         },
+//         "shopping": {
+//           "name": "Shopping Bags",
+//           "description": "Carrying concepts for retail, gifting and everyday shopping. Material direction, dimensions and presentation depend on your project needs."
+//         },
+//         "backpacks": {
+//           "name": "Backpacks",
+//           "description": "Organized carrying for work, study or travel. Discuss the back panel, straps and compartments around the intended contents."
+//         },
+//         "travel": {
+//           "name": "Travel Bags",
+//           "description": "Packing and carrying directions for short trips and journeys. Review capacity, opening and carrying options before setting specifications."
+//         },
+//         "duffel": {
+//           "name": "Duffel Bags",
+//           "description": "Spacious concepts for flexible packing and transport. Handle attachment, strap options and interior organization can be discussed."
+//         },
+//         "documents": {
+//           "name": "Document Bags",
+//           "description": "Storage for papers, work materials and business essentials. Share the required formats and organization needs for a suitable layout."
+//         },
+//         "electronics": {
+//           "name": "Electronics Organizers",
+//           "description": "Organization concepts for electronic devices and accessories. Internal fit, access and protective features depend on the intended products."
+//         },
+//         "automotive": {
+//           "name": "Automotive Organizers",
+//           "description": "Storage directions for selected automotive accessories. Define the contents and placement needs before discussing construction."
+//         },
+//         "tools": {
+//           "name": "Tool Bags",
+//           "description": "Organization concepts for tools and related accessories. Compartments, reinforcement and carrying details should follow the intended load."
+//         },
+//         "clutch": {
+//           "name": "Clutch Bags",
+//           "description": "Refined compact designs for essentials and special occasions. Review closure, lining and finishing details as one coordinated direction."
+//         },
+//         "pet": {
+//           "name": "Pet Travel Bags",
+//           "description": "Travel carrier and supply-bag concepts for pet owners. Size, ventilation, structure and safe use require a dedicated review for the intended animal and journey."
+//         }
+//       },
+//       "showAll": "Show all product directions"
+//     },
+//     "process": {
+//       "eyebrow": "A PRODUCT, STEP BY STEP",
+//       "title": "Turn a brief into a production plan.",
+//       "description": "The journey below explains a typical sequence of decisions. The exact route depends on the bag structure and project requirements, with sample scope and production arrangements agreed before work proceeds.",
+//       "items": [
+//         {
+//           "title": "Understand the brief",
+//           "description": "Review use, dimensions, reference images and the initial quantity to define a shared starting point."
+//         },
+//         {
+//           "title": "Review materials",
+//           "description": "Discuss suitable material families, components, color references and the requirements of the intended product."
+//         },
+//         {
+//           "title": "Develop and review",
+//           "description": "Agree on a sample plan, evaluate appearance and function, and record approved revisions."
+//         },
+//         {
+//           "title": "Prepare production",
+//           "description": "Confirm specifications, commercial terms, inspection criteria and the production arrangements."
+//         },
+//         {
+//           "title": "Check and finish",
+//           "description": "Review the agreed quality details, finishing requirements and product identification."
+//         },
+//         {
+//           "title": "Pack and dispatch",
+//           "description": "Coordinate packaging, shipment preparation and the documentation required for the order."
+//         }
+//       ]
+//     },
+//     "stages": {
+//       "material": {
+//         "eyebrow": "MATERIAL PREPARATION",
+//         "title": "The right conversation starts with materials.",
+//         "description": "Material choice influences structure, appearance and everyday use. Share your target feel, contents and market so relevant options can be reviewed before the product specification is finalized.",
+//         "items": [
+//           {
+//             "title": "Material direction",
+//             "description": "Discuss EVA, PU, PVC, polyester or other proposed materials in relation to the chosen design."
+//           },
+//           {
+//             "title": "Color references",
+//             "description": "Use physical references or recognized color references to communicate the intended appearance."
+//           },
+//           {
+//             "title": "Components and lining",
+//             "description": "Review closures, lining, handles and other components as part of the complete construction."
+//           }
+//         ]
+//       },
+//       "cutting": {
+//         "eyebrow": "CUTTING & FORMING",
+//         "title": "Give the chosen construction its shape.",
+//         "description": "Patterns and forming requirements depend on the bag design and material. The applicable cutting or shaping approach is reviewed during development, rather than assumed to be the same for every product.",
+//         "items": [
+//           {
+//             "title": "Pattern preparation",
+//             "description": "Clarify the dimensions, panel arrangement and allowances required by the chosen construction."
+//           },
+//           {
+//             "title": "Shaping discussion",
+//             "description": "For structured cases, review the shape and forming needs alongside material and tooling considerations."
+//           },
+//           {
+//             "title": "Reference review",
+//             "description": "Compare the proposed form with the intended contents and approved design direction."
+//           }
+//         ]
+//       },
+//       "sewing": {
+//         "eyebrow": "SEWING & ASSEMBLY",
+//         "title": "Connect each detail to the way it is used.",
+//         "description": "Assembly brings the outer structure, interior and carrying details together. Review the construction points that affect the user experience and record the agreed workmanship expectations.",
+//         "items": [
+//           {
+//             "title": "Panels and lining",
+//             "description": "Discuss how the outer panels and lining should come together for the selected product."
+//           },
+//           {
+//             "title": "Storage details",
+//             "description": "Review pockets, dividers and inserts around the intended contents and access requirements."
+//           },
+//           {
+//             "title": "Carrying components",
+//             "description": "Define handle, strap and closure attachment details for the agreed use and load."
+//           }
+//         ]
+//       },
+//       "branding": {
+//         "eyebrow": "BRANDING & FINISHING",
+//         "title": "Create a consistent brand expression.",
+//         "description": "Branding works best when it is considered alongside the product materials and construction. Review logo position, labels and finishing details before approving the final specification.",
+//         "items": [
+//           {
+//             "title": "Logo application",
+//             "description": "Provide suitable artwork so position, scale and possible application methods can be assessed."
+//           },
+//           {
+//             "title": "Product labels",
+//             "description": "Discuss identification, care information and labeling requirements for your market."
+//           },
+//           {
+//             "title": "Finishing reference",
+//             "description": "Review visible details, color coordination and the presentation of the finished product."
+//           }
+//         ]
+//       },
+//       "quality": {
+//         "eyebrow": "QUALITY CONTROL",
+//         "title": "Define what a successful product looks like.",
+//         "description": "Clear quality expectations help align development and production. Agree on the relevant appearance, workmanship and functionality criteria before scheduling the order.",
+//         "items": [
+//           {
+//             "title": "Appearance review",
+//             "description": "Use approved samples and material references to communicate the expected result."
+//           },
+//           {
+//             "title": "Function and construction",
+//             "description": "Discuss checks for closures, compartments, attachment points and the intended use."
+//           },
+//           {
+//             "title": "Inspection arrangements",
+//             "description": "Confirm the acceptance criteria and reporting needed for your particular order."
+//           }
+//         ]
+//       },
+//       "packaging": {
+//         "eyebrow": "PACKAGING & DISPATCH",
+//         "title": "Prepare the final product for its next journey.",
+//         "description": "Packing should reflect both presentation and transport needs. Share the destination and distribution requirements so the appropriate packaging and shipment details can be discussed.",
+//         "items": [
+//           {
+//             "title": "Product presentation",
+//             "description": "Review the individual packaging and identification needed for the finished items."
+//           },
+//           {
+//             "title": "Transport preparation",
+//             "description": "Discuss carton organization and handling needs in relation to the planned shipment."
+//           },
+//           {
+//             "title": "Order documentation",
+//             "description": "Confirm the shipping details and documents required before arranging dispatch."
+//           }
+//         ]
+//       }
+//     },
+//     "capacity": {
+//       "eyebrow": "PRODUCTION PLANNING",
+//       "title": "Resources shaped around the project.",
+//       "description": "Our operation includes 145 employees, a 6,500 m² factory, 8 regular production lines and 4 reserve lines. Order planning also considers construction complexity, material availability and the requirements of each project.",
+//       "items": [
+//         {
+//           "title": "People and work allocation",
+//           "description": "Discuss the work involved in your product so a suitable production arrangement can be reviewed."
+//         },
+//         {
+//           "title": "Regular and reserve lines",
+//           "description": "The line figures describe factory resources; available scheduling is confirmed for the order."
+//         },
+//         {
+//           "title": "Project-specific timing",
+//           "description": "Sample approval, material preparation and production requirements all influence the proposed schedule."
+//         }
+//       ]
+//     },
+//     "equipment": {
+//       "eyebrow": "WORKSTATIONS & PRODUCTION AREAS",
+//       "title": "Understand the role of each workspace.",
+//       "description": "These illustrations explain common workstation roles in a bag production journey. Exact equipment models and project-specific arrangements can be discussed during a factory visit or technical review.",
+//       "items": [
+//         {
+//           "title": "Material workspace",
+//           "description": "A place to review material references, panel preparation and the chosen construction direction."
+//         },
+//         {
+//           "title": "Assembly workspace",
+//           "description": "A stage for bringing together panels, interior details and carrying components."
+//         },
+//         {
+//           "title": "Finishing workspace",
+//           "description": "An area for reviewing finished details, product identification and packing requirements."
+//         }
+//       ]
+//     },
+//     "gallery": {
+//       "eyebrow": "FACTORY & PEOPLE",
+//       "title": "A closer look at our working environment.",
+//       "description": "Explore factory photographs and captions supplied by our company. Each image introduces a real space, team or production activity to help you understand the environment behind your product."
+//     },
+//     "custom": {
+//       "eyebrow": "OEM / ODM DEVELOPMENT",
+//       "title": "Your design, or a direction we develop together.",
+//       "description": "Bring a developed design for an OEM conversation, or discuss an ODM direction starting from your audience and product needs. Development scope, materials and sample arrangements are agreed for each project.",
+//       "button": "Explore OEM & ODM"
+//     },
+//     "responsible": {
+//       "eyebrow": "MANUFACTURING WITH PURPOSE",
+//       "title": "Create opportunity closer to home.",
+//       "description": "Our factory was established in a mountainous area of China affected by poverty. Through our poverty alleviation workshop, we help disadvantaged local residents access employment closer to where they live.",
+//       "items": [
+//         {
+//           "title": "Local employment",
+//           "description": "Creating work nearby helps residents pursue employment without relying solely on opportunities far from home."
+//         },
+//         {
+//           "title": "People behind the product",
+//           "description": "Every product discussion is connected to the people whose work contributes to its development and production."
+//         },
+//         {
+//           "title": "A lasting direction",
+//           "description": "Our goal is to support local opportunity while building clear, practical working relationships with customers."
+//         }
+//       ]
+//     },
+//     "planning": {
+//       "eyebrow": "PREPARE YOUR PROJECT",
+//       "title": "Start with the information that matters.",
+//       "description": "You do not need to have every detail resolved before contacting us. A clear introduction to your product, quantity and target timing helps the team identify the next questions to review.",
+//       "items": [
+//         {
+//           "title": "Design and intended use",
+//           "description": "Share a product type, reference images, approximate dimensions and the items it should carry."
+//         },
+//         {
+//           "title": "Quantity and destination",
+//           "description": "Provide an estimated quantity and destination market so the commercial discussion has a useful starting point."
+//         },
+//         {
+//           "title": "Samples and timing",
+//           "description": "Explain your sample needs and preferred delivery window so feasibility can be assessed."
+//         }
+//       ]
+//     },
+//     "visit": {
+//       "eyebrow": "VISIT THE FACTORY",
+//       "title": "See the details. Meet the people.",
+//       "description": "A factory visit is an opportunity to discuss construction, materials and production questions in person. Contact the team in advance to confirm the location, appointment and suitable areas to review.",
+//       "button": "Arrange a factory visit",
+//       "addressLabel": "Factory location",
+//       "steps": [
+//         {
+//           "title": "Request an appointment",
+//           "description": "Share your preferred dates, visitor details and the products you would like to discuss."
+//         },
+//         {
+//           "title": "Agree on the agenda",
+//           "description": "Confirm the location, meeting time and relevant production or material questions before traveling."
+//         },
+//         {
+//           "title": "Bring useful references",
+//           "description": "Prepare samples, drawings or a short product brief to make the visit more productive."
+//         }
+//       ]
+//     },
+//     "faq": {
+//       "eyebrow": "MANUFACTURING QUESTIONS",
+//       "title": "Clear answers before the next step.",
+//       "description": "These answers introduce the usual project discussion. Product specifications, performance requirements, order quantities and schedules are confirmed individually with the team.",
+//       "search": "Search manufacturing questions",
+//       "items": [
+//         {
+//           "question": "Which bags can we discuss for production?",
+//           "answer": "Explore the categories above, including cosmetic bags, handbags, travel bags and pet travel bags. Share a specific reference so the team can confirm the design, development scope and production feasibility."
+//         },
+//         {
+//           "question": "Can you manufacture from my own design?",
+//           "answer": "Provide drawings, reference photos or a sample for review. The team will discuss construction, materials and the information needed to evaluate an OEM project."
+//         },
+//         {
+//           "question": "What are the order quantities and lead times?",
+//           "answer": "These depend on the product, materials, customization and production arrangements. Send your brief and estimated quantity so suitable terms and timing can be discussed."
+//         },
+//         {
+//           "question": "Can the bag protect fragile items?",
+//           "answer": "Protection depends on the contents, materials, structure and test conditions. Share the intended items and performance requirements so the appropriate construction and any testing needs can be reviewed."
+//         },
+//         {
+//           "question": "Can we arrange a factory visit?",
+//           "answer": "Contact the team with your preferred dates and product interests. Confirm the appointment, location and agenda before making travel arrangements."
+//         }
+//       ],
+//       "empty": "No matching questions. Try another term or contact our team."
+//     },
+//     "inquiry": {
+//       "eyebrow": "LET’S MAKE THE NEXT STEP CLEAR",
+//       "title": "Tell us what you want to produce.",
+//       "description": "Prepare a short production brief with your product direction, approximate quantity and key requirements. You can copy the summary and continue to the contact page to discuss it with our team.",
+//       "name": "Your name",
+//       "email": "Business email",
+//       "product": "Product direction",
+//       "quantity": "Estimated quantity",
+//       "requirements": "Project requirements",
+//       "placeholder": "Describe dimensions, materials, references and your preferred timing.",
+//       "prepare": "Prepare production brief",
+//       "summary": "Your production brief",
+//       "copy": "Copy brief",
+//       "copied": "Brief copied",
+//       "failed": "Automatic copying is unavailable. Select and copy the brief below.",
+//       "contact": "Continue to contact",
+//       "note": "This form prepares a summary on your device. It does not send an enquiry or submit an order.",
+//       "options": "Include in the discussion",
+//       "logo": "Logo application",
+//       "sample": "Sample development",
+//       "packaging": "Packaging requirements"
+//     }
+//   },
+//   oemOdm: {
+//     "hero": {
+//       "eyebrow": "OEM / ODM · THE DESIGN ATELIER",
+//       "title": "Your vision.",
+//       "highlight": "Beautifully made.",
+//       "description": "Bring your next bag collection to life through a collaborative development process. Share your design or explore a new direction with our team, then refine the materials, construction and finishing details before production.",
+//       "primary": "Start your project",
+//       "secondary": "Explore our services",
+//       "visualTitle": "A study in possibility",
+//       "visualDescription": "Explore an interactive concept model and imagine your own combination of color, texture and branding. This illustration introduces design possibilities; it does not represent a confirmed production specification.",
+//       "drag": "Drag to rotate the model",
+//       "pause": "Pause rotation",
+//       "play": "Resume rotation",
+//       "loading": "Preparing the interactive bag model.",
+//       "fallback": "The interactive model is unavailable on this device. You can still explore every service and customization option below.",
+//       "concept": "Interactive design concept"
+//     },
+//     "comparison": {
+//       "eyebrow": "FIND YOUR STARTING POINT",
+//       "title": "Two ways to create. One shared ambition.",
+//       "description": "Every collection begins at a different stage. Choose OEM when you have a developed design, or discuss ODM when you would like support shaping a product direction. Final scope and feasibility are agreed during project review.",
+//       "oemTitle": "OEM · Your design, developed for production",
+//       "oemText": "Bring your drawings, reference samples or technical requirements. Our conversation focuses on materials, construction and the production details needed to move your design forward.",
+//       "odmTitle": "ODM · A direction we develop together",
+//       "odmText": "Begin with your audience, use case and visual references. Explore a suitable concept with our team, then discuss how its proportions, features and finishes could be adapted for your brand.",
+//       "choose": "Choose this approach"
+//     },
+//     "oem": {
+//       "eyebrow": "ORIGINAL EQUIPMENT MANUFACTURING",
+//       "title": "Keep your design at the center.",
+//       "description": "A successful OEM project starts with a clear understanding of your product. We review the information you provide, identify details that need clarification and discuss a practical route from your reference design to a sample.",
+//       "items": [
+//         {
+//           "title": "Design review",
+//           "description": "Share dimensions, drawings, reference photos or an existing sample so we can understand the intended structure and daily use."
+//         },
+//         {
+//           "title": "Material discussion",
+//           "description": "Review shell, lining and component preferences with the team. Material suitability and availability are confirmed for each project."
+//         },
+//         {
+//           "title": "Sample alignment",
+//           "description": "Use a physical sample to review appearance, function and finishing details before approving the agreed production specification."
+//         }
+//       ]
+//     },
+//     "odm": {
+//       "eyebrow": "ORIGINAL DESIGN MANUFACTURING",
+//       "title": "Give a new idea its own identity.",
+//       "description": "You do not need a finished technical pack to start a discussion. Tell us who the product is for and what it needs to carry, and we can explore a development direction suited to your brand and intended use.",
+//       "items": [
+//         {
+//           "title": "Define the brief",
+//           "description": "Describe your customer, preferred style and storage needs. Clear references help establish a shared visual and functional direction."
+//         },
+//         {
+//           "title": "Explore the concept",
+//           "description": "Discuss proportions, compartments, carrying options and finishes. Development scope is reviewed before any sample work begins."
+//         },
+//         {
+//           "title": "Refine for your brand",
+//           "description": "Review the proposed details together and identify the changes needed for a cohesive collection and an agreed production specification."
+//         }
+//       ]
+//     },
+//     "process": {
+//       "eyebrow": "FROM CONVERSATION TO COLLECTION",
+//       "title": "A considered process, step by step.",
+//       "description": "Product development works best when decisions are made in a clear order. The sequence below is an illustrative workflow; responsibilities, sample rounds and production arrangements are confirmed for your specific project.",
+//       "items": [
+//         {
+//           "title": "Share your brief",
+//           "description": "Introduce your product idea, references, intended use and approximate order quantity."
+//         },
+//         {
+//           "title": "Review the direction",
+//           "description": "Discuss materials, structure, customization and the information needed for a quotation."
+//         },
+//         {
+//           "title": "Develop a sample",
+//           "description": "Review the agreed sample scope, timing and costs before development begins."
+//         },
+//         {
+//           "title": "Approve the details",
+//           "description": "Check the sample and record the final specifications and any approved revisions."
+//         },
+//         {
+//           "title": "Arrange production",
+//           "description": "Confirm commercial terms, production planning and the agreed inspection requirements."
+//         },
+//         {
+//           "title": "Prepare delivery",
+//           "description": "Review packaging, shipment details and the documents required for your order."
+//         }
+//       ]
+//     },
+//     "customization": {
+//       "eyebrow": "DETAILS THAT MAKE IT YOURS",
+//       "title": "Build a product around its purpose.",
+//       "description": "The best customization choices improve both identity and everyday use. Start with the elements below, then discuss which combinations are practical for your chosen bag and target budget.",
+//       "items": [
+//         {
+//           "title": "Shape & dimensions",
+//           "description": "Explore proportions that suit the items your customers carry, with dimensions reviewed during development."
+//         },
+//         {
+//           "title": "Interior organization",
+//           "description": "Discuss dividers, pockets and protective inserts to create an interior suited to the intended contents."
+//         },
+//         {
+//           "title": "Carry & closure",
+//           "description": "Consider handles, straps and closure details that complement the product’s appearance and use."
+//         },
+//         {
+//           "title": "Color & identity",
+//           "description": "Coordinate color direction, logo placement and packaging for a consistent brand presentation."
+//         }
+//       ]
+//     },
+//     "materials": {
+//       "eyebrow": "THE MATERIAL LIBRARY",
+//       "title": "Find your signature combination.",
+//       "description": "Try a color direction on the concept model and explore possible material families. These previews communicate preferences only; physical samples, exact color matching and material suitability must be confirmed with our team.",
+//       "color": "Preferred color direction",
+//       "material": "Material direction",
+//       "preview": "Concept preview",
+//       "selected": "Your current selection",
+//       "colors": {
+//         "rose": "Dusty rose",
+//         "sand": "Champagne",
+//         "olive": "Deep olive",
+//         "onyx": "Onyx"
+//       },
+//       "materials": {
+//         "eva": "EVA construction",
+//         "pu": "PU surface",
+//         "polyester": "Polyester fabric"
+//       },
+//       "note": "Screen colors and model textures are illustrative and may differ from physical materials."
+//     },
+//     "branding": {
+//       "eyebrow": "A COHERENT BRAND EXPERIENCE",
+//       "title": "The finishing details tell your story.",
+//       "description": "A logo is one part of a wider product experience. Consider how the bag, its labels and its packaging work together, then discuss the options that suit your design, material and order requirements.",
+//       "items": [
+//         {
+//           "title": "Logo placement",
+//           "description": "Review the scale, position and possible application method for your logo using suitable artwork and material references."
+//         },
+//         {
+//           "title": "Labels & identification",
+//           "description": "Discuss the product labels, care information and identification details your market and distribution channels require."
+//         },
+//         {
+//           "title": "Packaging direction",
+//           "description": "Share your presentation and shipping needs so packaging options can be reviewed alongside the finished product."
+//         }
+//       ]
+//     },
+//     "sample": {
+//       "eyebrow": "SEE IT. HOLD IT. REFINE IT.",
+//       "title": "Make the important decisions tangible.",
+//       "description": "A sample gives your team a practical way to review the design before committing to production. Use it to check proportions, storage, material feel and finishing details, then document any changes clearly.",
+//       "items": [
+//         {
+//           "title": "Agree on the sample brief",
+//           "description": "Confirm what the sample should demonstrate, the information needed to make it and the associated timing and costs."
+//         },
+//         {
+//           "title": "Review appearance and function",
+//           "description": "Compare the sample with your references and assess how it performs with the items it is intended to carry."
+//         },
+//         {
+//           "title": "Record your approval",
+//           "description": "Keep the approved specifications and revisions together so production requirements are clearly understood."
+//         }
+//       ]
+//     },
+//     "quality": {
+//       "eyebrow": "PRODUCTION WITH A CLEAR REFERENCE",
+//       "title": "Define quality before production begins.",
+//       "description": "Quality expectations should be part of the project brief, not an assumption at the end. Discuss the relevant workmanship, functionality and inspection criteria with our team and record what has been agreed.",
+//       "items": [
+//         {
+//           "title": "Material reference",
+//           "description": "Use approved material and color references to establish the intended appearance and construction."
+//         },
+//         {
+//           "title": "Workmanship criteria",
+//           "description": "Agree on the details that matter for your product, including stitching, closures and component attachment."
+//         },
+//         {
+//           "title": "Inspection arrangements",
+//           "description": "Confirm the checks, acceptance criteria and reporting needed for your order before production is scheduled."
+//         }
+//       ],
+//       "note": "Testing methods, certifications and performance claims are confirmed only when applicable documentation is available."
+//     },
+//     "requirements": {
+//       "eyebrow": "PLAN YOUR NEXT CONVERSATION",
+//       "title": "A clearer brief makes a stronger start.",
+//       "description": "Prepare a few essential details before requesting a quotation. Minimum quantities, development costs and lead times vary with design, materials and customization, so they should be confirmed for your individual project.",
+//       "items": [
+//         {
+//           "title": "Product & references",
+//           "description": "Share the bag type, intended contents, approximate dimensions and any drawings or reference images."
+//         },
+//         {
+//           "title": "Quantity & timing",
+//           "description": "Provide an estimated order quantity and preferred delivery date so feasibility can be reviewed."
+//         },
+//         {
+//           "title": "Branding & packaging",
+//           "description": "Include your logo requirements, packaging preferences and destination market when available."
+//         }
+//       ]
+//     },
+//     "showcase": {
+//       "eyebrow": "EXPLORE THE POSSIBILITIES",
+//       "title": "One starting point. Different expressions.",
+//       "description": "These concept studies illustrate how a shared silhouette can take on a different personality through color and material direction. They are design illustrations, rather than completed customer projects or verified catalogue items.",
+//       "items": [
+//         {
+//           "title": "The everyday edit",
+//           "description": "A restrained champagne direction for a clean, versatile collection."
+//         },
+//         {
+//           "title": "The modern romantic",
+//           "description": "A dusty rose direction with a soft visual identity and warm metallic details."
+//         },
+//         {
+//           "title": "The considered essential",
+//           "description": "A deep olive direction with a quieter, more grounded character."
+//         }
+//       ],
+//       "concept": "Design concept"
+//     },
+//     "faq": {
+//       "eyebrow": "BEFORE WE BEGIN",
+//       "title": "Useful answers for your next project.",
+//       "description": "Explore the questions buyers often raise before starting development. These answers introduce the process; the final commercial and technical details are confirmed directly for your project.",
+//       "search": "Search OEM and ODM questions",
+//       "empty": "No matching questions. Try another term or contact our team.",
+//       "items": [
+//         {
+//           "question": "Should I choose OEM or ODM?",
+//           "answer": "OEM is a useful starting point when you already have a design or reference sample. ODM is worth discussing when you need support developing a direction. We review your starting materials and agree on the scope before proceeding."
+//         },
+//         {
+//           "question": "Can I choose my own colors and logo?",
+//           "answer": "Share your preferred color references and logo artwork so suitable options can be reviewed. Exact color matching, application methods, costs and minimum quantities depend on the product and selected materials."
+//         },
+//         {
+//           "question": "What is the minimum order quantity?",
+//           "answer": "Minimum quantities depend on construction, materials, color choices and customization. Send your product brief and estimated quantity so the team can confirm what is practical."
+//         },
+//         {
+//           "question": "How long does sampling and production take?",
+//           "answer": "Timing is assessed after reviewing the design, materials, development work and current production arrangements. Confirm sample and production schedules directly with the team before planning your launch."
+//         },
+//         {
+//           "question": "Can I review a sample before production?",
+//           "answer": "Discuss a sample as part of the development process so appearance and function can be reviewed. The sample scope, number of revision rounds, costs and approval process should be agreed in advance."
+//         }
+//       ]
+//     },
+//     "inquiry": {
+//       "eyebrow": "YOUR NEXT COLLECTION STARTS HERE",
+//       "title": "Let’s give your idea a direction.",
+//       "description": "Create a short project summary with your preferred development approach and selected details. You can copy it for your records or continue to our contact page to discuss the project with the team.",
+//       "approach": "Development approach",
+//       "name": "Your name",
+//       "email": "Business email",
+//       "quantity": "Estimated quantity",
+//       "quantityHint": "For example, 500 pieces",
+//       "requirements": "Project requirements",
+//       "requirementsHint": "Describe the product, intended use, approximate dimensions and any important details.",
+//       "options": "Include these discussion points",
+//       "choices": {
+//         "logo": "Logo application",
+//         "packaging": "Custom packaging",
+//         "sample": "Sample development"
+//       },
+//       "prepare": "Prepare project summary",
+//       "copy": "Copy summary",
+//       "copied": "Summary copied",
+//       "copyError": "Copy unavailable. Select and copy the summary below.",
+//       "contact": "Continue to contact",
+//       "summary": "Your project summary",
+//       "note": "Preparing this summary does not send a message or submit an order.",
+//       "required": "Please complete the required fields.",
+//       "selection": "Preferred direction",
+//       "extras": "Discussion points"
+//     }
+//   },
 //   mobileNavigation: {
 //     openNavigation: "Open navigation",
 //     navigationLabel: "Mobile navigation",
@@ -1385,8 +2162,539 @@
 
 
 
-
 const en = {
+  manufacturingPage: {
+    "company": {
+      "name": "Yiwu Chucheng Bags Co., Ltd.",
+      "location": "Yejia, Gangkou Village, Nanshan Township, Yushan County, Shangrao, Jiangxi, China",
+      "founded": "Established in 2011"
+    },
+    "hero": {
+      "eyebrow": "THE MANUFACTURING ATELIER",
+      "title": "Crafted to carry.",
+      "highlight": "Made to become yours.",
+      "description": "Explore the people, product directions and production conversations behind your next bag collection. From material selection to packing, a clearly defined brief helps us develop a practical manufacturing plan together.",
+      "primary": "Discuss production",
+      "secondary": "Explore the process",
+      "sceneTitle": "A collection in motion",
+      "sceneDescription": "Explore a dimensional display of our bag photographs, with the selected product in focus. The photographs remain flat images; the display, lighting and stage create the spatial presentation.",
+      "sceneLabel": "Interactive production illustration",
+      "loading": "Preparing the 3D production scene.",
+      "fallback": "The 3D scene is unavailable on this device. All production information remains available below.",
+      "pause": "Pause scene animation",
+      "play": "Resume scene animation",
+      "left": "Rotate scene left",
+      "right": "Rotate scene right",
+      "stages": [
+        "Product collection",
+        "Material detail",
+        "Production journey"
+      ],
+      "drag": "Drag to explore the scene"
+    },
+    "overview": {
+      "eyebrow": "OUR COMPANY",
+      "title": "A factory with people at its heart.",
+      "description": "Yiwu Chucheng Bags Co., Ltd. was established in 2011. Our manufacturing story combines the development of bags and organizers with a commitment to creating employment opportunities closer to home for local residents.",
+      "items": [
+        {
+          "title": "A clear product conversation",
+          "description": "We begin by understanding what your bag needs to carry, how it will be used and the appearance you want to achieve."
+        },
+        {
+          "title": "Development with a reference",
+          "description": "Drawings, photos and samples help establish a shared direction for construction, materials and finishing."
+        },
+        {
+          "title": "A practical manufacturing brief",
+          "description": "Agreed product specifications, quantities and inspection requirements guide the next stage of your project."
+        }
+      ]
+    },
+    "statistics": {
+      "eyebrow": "THE FACTORY AT A GLANCE",
+      "title": "People, space and production resources.",
+      "description": "These company figures provide a starting point for understanding our operation. The capacity available for a particular order depends on product complexity, materials and the agreed production schedule.",
+      "employees": "Employees",
+      "area": "Factory area",
+      "regular": "Regular production lines",
+      "reserve": "Reserve production lines"
+    },
+    "categories": {
+      "eyebrow": "PRODUCT DIRECTIONS",
+      "title": "A world of bags. A considered approach.",
+      "description": "Choose a product direction and explore the photographs available for it. Our current images focus on cases and organizers; other bag directions, including pet travel bags, can be discussed with the team. Final construction and availability are confirmed for your project.",
+      "search": "Search production categories",
+      "clear": "Clear search",
+      "submit": "Search",
+      "groups": {
+        "bags": "Bags",
+        "cases": "Cases & organizers",
+        "pet": "Pet travel"
+      },
+      "filter": "Product groups",
+      "results": "Matching categories",
+      "empty": "No matching categories. Try another search or product group.",
+      "reset": "Reset filters",
+      "view": "Explore this direction",
+      "selected": "Your selected product direction",
+      "contact": "Discuss this product",
+      "imageNote": "Design illustration",
+      "items": {
+        "eva": {
+          "name": "EVA Cases",
+          "description": "Structured cases for organizing and carrying everyday essentials. Share the intended contents so the dimensions, opening and protective construction can be discussed."
+        },
+        "pencil": {
+          "name": "Pencil Cases",
+          "description": "Compact stationery storage for school, work or creative use. Interior organization and branding can be reviewed around your preferred product direction."
+        },
+        "medical": {
+          "name": "First Aid Bags",
+          "description": "Storage concepts for organizing first aid supplies. Compartments and identification details should be defined for the intended contents and market."
+        },
+        "toiletry": {
+          "name": "Toiletry Bags",
+          "description": "Travel-ready organization for personal care essentials. Discuss the opening, lining and pocket arrangement for your preferred use case."
+        },
+        "makeup": {
+          "name": "Makeup & Cosmetic Bags",
+          "description": "A product direction for everyday beauty routines and travel. Review proportions, brush storage and compartment layouts with your references."
+        },
+        "handbags": {
+          "name": "Handbags",
+          "description": "Explore a signature silhouette for your collection. Materials, carrying details and finishing choices are developed around the agreed brief."
+        },
+        "shoulder": {
+          "name": "Shoulder Bags",
+          "description": "A practical carrying direction for daily essentials. Strap arrangement, access and interior space can be reviewed during development."
+        },
+        "crossbody": {
+          "name": "Crossbody Bags",
+          "description": "Compact organization with a hands-free carrying approach. Share your preferred proportions and strap references to start the discussion."
+        },
+        "tote": {
+          "name": "Tote Bags",
+          "description": "Roomier bag concepts for everyday carrying and shopping. Discuss structure, handles and organization in relation to your intended load."
+        },
+        "party": {
+          "name": "Party & Evening Bags",
+          "description": "Occasion-focused designs with a distinctive visual identity. Surface finishes, closures and carrying details are reviewed for the chosen design."
+        },
+        "mini": {
+          "name": "Mini Bags",
+          "description": "Small-scale designs for a carefully edited set of essentials. Review capacity and access early so the proportions remain useful."
+        },
+        "bucket": {
+          "name": "Bucket Bags",
+          "description": "Explore a softer, open-volume silhouette for a collection. Discuss the base, closure and lining arrangement with your references."
+        },
+        "satchel": {
+          "name": "Satchel Bags",
+          "description": "A structured design direction for organized everyday carrying. Review flap proportions, handle placement and interior layout together."
+        },
+        "belt": {
+          "name": "Belt Bags",
+          "description": "Hands-free carrying concepts for travel and daily activities. Fit, access and strap adjustment should be part of the product brief."
+        },
+        "shopping": {
+          "name": "Shopping Bags",
+          "description": "Carrying concepts for retail, gifting and everyday shopping. Material direction, dimensions and presentation depend on your project needs."
+        },
+        "backpacks": {
+          "name": "Backpacks",
+          "description": "Organized carrying for work, study or travel. Discuss the back panel, straps and compartments around the intended contents."
+        },
+        "travel": {
+          "name": "Travel Bags",
+          "description": "Packing and carrying directions for short trips and journeys. Review capacity, opening and carrying options before setting specifications."
+        },
+        "duffel": {
+          "name": "Duffel Bags",
+          "description": "Spacious concepts for flexible packing and transport. Handle attachment, strap options and interior organization can be discussed."
+        },
+        "documents": {
+          "name": "Document Bags",
+          "description": "Storage for papers, work materials and business essentials. Share the required formats and organization needs for a suitable layout."
+        },
+        "electronics": {
+          "name": "Electronics Organizers",
+          "description": "Organization concepts for electronic devices and accessories. Internal fit, access and protective features depend on the intended products."
+        },
+        "automotive": {
+          "name": "Automotive Organizers",
+          "description": "Storage directions for selected automotive accessories. Define the contents and placement needs before discussing construction."
+        },
+        "tools": {
+          "name": "Tool Bags",
+          "description": "Organization concepts for tools and related accessories. Compartments, reinforcement and carrying details should follow the intended load."
+        },
+        "clutch": {
+          "name": "Clutch Bags",
+          "description": "Refined compact designs for essentials and special occasions. Review closure, lining and finishing details as one coordinated direction."
+        },
+        "pet": {
+          "name": "Pet Travel Bags",
+          "description": "Travel carrier and supply-bag concepts for pet owners. Size, ventilation, structure and safe use require a dedicated review for the intended animal and journey."
+        }
+      },
+      "showAll": "Show all product directions"
+    },
+    "process": {
+      "eyebrow": "A PRODUCT, STEP BY STEP",
+      "title": "A journey you can explore.",
+      "description": "Move through the stages to see how a product brief becomes a coordinated production conversation. Each step has its own decisions, from material references and sample approval to finishing and delivery preparation.",
+      "items": [
+        {
+          "title": "Understand the brief",
+          "description": "Review use, dimensions, reference images and the initial quantity to define a shared starting point."
+        },
+        {
+          "title": "Review materials",
+          "description": "Discuss suitable material families, components, color references and the requirements of the intended product."
+        },
+        {
+          "title": "Develop and review",
+          "description": "Agree on a sample plan, evaluate appearance and function, and record approved revisions."
+        },
+        {
+          "title": "Prepare production",
+          "description": "Confirm specifications, commercial terms, inspection criteria and the production arrangements."
+        },
+        {
+          "title": "Check and finish",
+          "description": "Review the agreed quality details, finishing requirements and product identification."
+        },
+        {
+          "title": "Pack and dispatch",
+          "description": "Coordinate packaging, shipment preparation and the documentation required for the order."
+        }
+      ],
+      "previous": "Previous production step",
+      "next": "Next production step"
+    },
+    "stages": {
+      "material": {
+        "eyebrow": "MATERIAL PREPARATION",
+        "title": "The right conversation starts with materials.",
+        "description": "Material choice influences structure, appearance and everyday use. Share your target feel, contents and market so relevant options can be reviewed before the product specification is finalized.",
+        "items": [
+          {
+            "title": "Material direction",
+            "description": "Discuss EVA, PU, PVC, polyester or other proposed materials in relation to the chosen design."
+          },
+          {
+            "title": "Color references",
+            "description": "Use physical references or recognized color references to communicate the intended appearance."
+          },
+          {
+            "title": "Components and lining",
+            "description": "Review closures, lining, handles and other components as part of the complete construction."
+          }
+        ]
+      },
+      "cutting": {
+        "eyebrow": "CUTTING & FORMING",
+        "title": "Give the chosen construction its shape.",
+        "description": "Patterns and forming requirements depend on the bag design and material. The applicable cutting or shaping approach is reviewed during development, rather than assumed to be the same for every product.",
+        "items": [
+          {
+            "title": "Pattern preparation",
+            "description": "Clarify the dimensions, panel arrangement and allowances required by the chosen construction."
+          },
+          {
+            "title": "Shaping discussion",
+            "description": "For structured cases, review the shape and forming needs alongside material and tooling considerations."
+          },
+          {
+            "title": "Reference review",
+            "description": "Compare the proposed form with the intended contents and approved design direction."
+          }
+        ]
+      },
+      "sewing": {
+        "eyebrow": "SEWING & ASSEMBLY",
+        "title": "Connect each detail to the way it is used.",
+        "description": "Assembly brings the outer structure, interior and carrying details together. Review the construction points that affect the user experience and record the agreed workmanship expectations.",
+        "items": [
+          {
+            "title": "Panels and lining",
+            "description": "Discuss how the outer panels and lining should come together for the selected product."
+          },
+          {
+            "title": "Storage details",
+            "description": "Review pockets, dividers and inserts around the intended contents and access requirements."
+          },
+          {
+            "title": "Carrying components",
+            "description": "Define handle, strap and closure attachment details for the agreed use and load."
+          }
+        ]
+      },
+      "branding": {
+        "eyebrow": "BRANDING & FINISHING",
+        "title": "Create a consistent brand expression.",
+        "description": "Branding works best when it is considered alongside the product materials and construction. Review logo position, labels and finishing details before approving the final specification.",
+        "items": [
+          {
+            "title": "Logo application",
+            "description": "Provide suitable artwork so position, scale and possible application methods can be assessed."
+          },
+          {
+            "title": "Product labels",
+            "description": "Discuss identification, care information and labeling requirements for your market."
+          },
+          {
+            "title": "Finishing reference",
+            "description": "Review visible details, color coordination and the presentation of the finished product."
+          }
+        ]
+      },
+      "quality": {
+        "eyebrow": "QUALITY CONTROL",
+        "title": "Define what a successful product looks like.",
+        "description": "Clear quality expectations help align development and production. Agree on the relevant appearance, workmanship and functionality criteria before scheduling the order.",
+        "items": [
+          {
+            "title": "Appearance review",
+            "description": "Use approved samples and material references to communicate the expected result."
+          },
+          {
+            "title": "Function and construction",
+            "description": "Discuss checks for closures, compartments, attachment points and the intended use."
+          },
+          {
+            "title": "Inspection arrangements",
+            "description": "Confirm the acceptance criteria and reporting needed for your particular order."
+          }
+        ]
+      },
+      "packaging": {
+        "eyebrow": "PACKAGING & DISPATCH",
+        "title": "Prepare the final product for its next journey.",
+        "description": "Packing should reflect both presentation and transport needs. Share the destination and distribution requirements so the appropriate packaging and shipment details can be discussed.",
+        "items": [
+          {
+            "title": "Product presentation",
+            "description": "Review the individual packaging and identification needed for the finished items."
+          },
+          {
+            "title": "Transport preparation",
+            "description": "Discuss carton organization and handling needs in relation to the planned shipment."
+          },
+          {
+            "title": "Order documentation",
+            "description": "Confirm the shipping details and documents required before arranging dispatch."
+          }
+        ]
+      }
+    },
+    "capacity": {
+      "eyebrow": "PRODUCTION PLANNING",
+      "title": "Resources shaped around the project.",
+      "description": "Our operation includes 145 employees, a 6,500 m² factory, 8 regular production lines and 4 reserve lines. Order planning also considers construction complexity, material availability and the requirements of each project.",
+      "items": [
+        {
+          "title": "People and work allocation",
+          "description": "Discuss the work involved in your product so a suitable production arrangement can be reviewed."
+        },
+        {
+          "title": "Regular and reserve lines",
+          "description": "The line figures describe factory resources; available scheduling is confirmed for the order."
+        },
+        {
+          "title": "Project-specific timing",
+          "description": "Sample approval, material preparation and production requirements all influence the proposed schedule."
+        }
+      ]
+    },
+    "equipment": {
+      "eyebrow": "WORKSTATIONS & PRODUCTION AREAS",
+      "title": "Understand the role of each workspace.",
+      "description": "These illustrations explain common workstation roles in a bag production journey. Exact equipment models and project-specific arrangements can be discussed during a factory visit or technical review.",
+      "items": [
+        {
+          "title": "Material workspace",
+          "description": "A place to review material references, panel preparation and the chosen construction direction."
+        },
+        {
+          "title": "Assembly workspace",
+          "description": "A stage for bringing together panels, interior details and carrying components."
+        },
+        {
+          "title": "Finishing workspace",
+          "description": "An area for reviewing finished details, product identification and packing requirements."
+        }
+      ]
+    },
+    "gallery": {
+      "eyebrow": "FACTORY & PEOPLE",
+      "title": "The work behind the collection.",
+      "description": "These supplied production reference photographs introduce inspection, assembly and product handling activities. Discuss the relevant work areas and arrangements for your project with our team."
+    },
+    "custom": {
+      "eyebrow": "OEM / ODM DEVELOPMENT",
+      "title": "Your design, or a direction we develop together.",
+      "description": "Bring a developed design for an OEM conversation, or discuss an ODM direction starting from your audience and product needs. Development scope, materials and sample arrangements are agreed for each project.",
+      "button": "Explore OEM & ODM"
+    },
+    "responsible": {
+      "eyebrow": "MANUFACTURING WITH PURPOSE",
+      "title": "Create opportunity closer to home.",
+      "description": "Our factory was established in a mountainous area of China affected by poverty. Through our poverty alleviation workshop, we help disadvantaged local residents access employment closer to where they live.",
+      "items": [
+        {
+          "title": "Local employment",
+          "description": "Creating work nearby helps residents pursue employment without relying solely on opportunities far from home."
+        },
+        {
+          "title": "People behind the product",
+          "description": "Every product discussion is connected to the people whose work contributes to its development and production."
+        },
+        {
+          "title": "A lasting direction",
+          "description": "Our goal is to support local opportunity while building clear, practical working relationships with customers."
+        }
+      ]
+    },
+    "planning": {
+      "eyebrow": "PREPARE YOUR PROJECT",
+      "title": "Start with the information that matters.",
+      "description": "You do not need to have every detail resolved before contacting us. A clear introduction to your product, quantity and target timing helps the team identify the next questions to review.",
+      "items": [
+        {
+          "title": "Design and intended use",
+          "description": "Share a product type, reference images, approximate dimensions and the items it should carry."
+        },
+        {
+          "title": "Quantity and destination",
+          "description": "Provide an estimated quantity and destination market so the commercial discussion has a useful starting point."
+        },
+        {
+          "title": "Samples and timing",
+          "description": "Explain your sample needs and preferred delivery window so feasibility can be assessed."
+        }
+      ]
+    },
+    "visit": {
+      "eyebrow": "VISIT THE FACTORY",
+      "title": "See the details. Meet the people.",
+      "description": "A factory visit is an opportunity to discuss construction, materials and production questions in person. Contact the team in advance to confirm the location, appointment and suitable areas to review.",
+      "button": "Arrange a factory visit",
+      "addressLabel": "Factory location",
+      "steps": [
+        {
+          "title": "Request an appointment",
+          "description": "Share your preferred dates, visitor details and the products you would like to discuss."
+        },
+        {
+          "title": "Agree on the agenda",
+          "description": "Confirm the location, meeting time and relevant production or material questions before traveling."
+        },
+        {
+          "title": "Bring useful references",
+          "description": "Prepare samples, drawings or a short product brief to make the visit more productive."
+        }
+      ]
+    },
+    "faq": {
+      "eyebrow": "MANUFACTURING QUESTIONS",
+      "title": "Clear answers before the next step.",
+      "description": "These answers introduce the usual project discussion. Product specifications, performance requirements, order quantities and schedules are confirmed individually with the team.",
+      "search": "Search manufacturing questions",
+      "items": [
+        {
+          "question": "Which bags can we discuss for production?",
+          "answer": "Explore the categories above, including cosmetic bags, handbags, travel bags and pet travel bags. Share a specific reference so the team can confirm the design, development scope and production feasibility."
+        },
+        {
+          "question": "Can you manufacture from my own design?",
+          "answer": "Provide drawings, reference photos or a sample for review. The team will discuss construction, materials and the information needed to evaluate an OEM project."
+        },
+        {
+          "question": "What are the order quantities and lead times?",
+          "answer": "These depend on the product, materials, customization and production arrangements. Send your brief and estimated quantity so suitable terms and timing can be discussed."
+        },
+        {
+          "question": "Can the bag protect fragile items?",
+          "answer": "Protection depends on the contents, materials, structure and test conditions. Share the intended items and performance requirements so the appropriate construction and any testing needs can be reviewed."
+        },
+        {
+          "question": "Can we arrange a factory visit?",
+          "answer": "Contact the team with your preferred dates and product interests. Confirm the appointment, location and agenda before making travel arrangements."
+        }
+      ],
+      "empty": "No matching questions. Try another term or contact our team."
+    },
+    "inquiry": {
+      "eyebrow": "LET’S MAKE THE NEXT STEP CLEAR",
+      "title": "Tell us what you want to produce.",
+      "description": "Prepare a short production brief with your product direction, approximate quantity and key requirements. You can copy the summary and continue to the contact page to discuss it with our team.",
+      "name": "Your name",
+      "email": "Business email",
+      "product": "Product direction",
+      "quantity": "Estimated quantity",
+      "requirements": "Project requirements",
+      "placeholder": "Describe dimensions, materials, references and your preferred timing.",
+      "prepare": "Prepare production brief",
+      "summary": "Your production brief",
+      "copy": "Copy brief",
+      "copied": "Brief copied",
+      "failed": "Automatic copying is unavailable. Select and copy the brief below.",
+      "contact": "Continue to contact",
+      "note": "This form prepares a summary on your device. It does not send an enquiry or submit an order.",
+      "options": "Include in the discussion",
+      "logo": "Logo application",
+      "sample": "Sample development",
+      "packaging": "Packaging requirements"
+    },
+    "photos": {
+      "eyebrow": "THE PRODUCT GALLERY",
+      "title": "Real products. New possibilities.",
+      "description": "Explore the bag images in our collection, from compact cases to carrying and organizer designs. Choose a photograph to examine its details, or discuss a product direction with our team before defining the final specification.",
+      "all": "All photos",
+      "photos": "Product photos",
+      "previous": "Previous photo",
+      "next": "Next photo",
+      "select": "View photo",
+      "preview": "Preview local photos",
+      "previewNote": "Local previews stay on this device. They are not uploaded or saved to the website.",
+      "clearPreview": "Remove local previews",
+      "local": "Local preview",
+      "reference": "Collection image",
+      "render": "Product visualization",
+      "empty": "Images for this direction are available on request. Discuss your preferred design with our team.",
+      "unavailable": "This image could not be loaded.",
+      "show": "Show all photos",
+      "counter": "Photos",
+      "close": "Close photo details",
+      "scene": "A collection in motion",
+      "sceneText": "Explore a dimensional display of our bag photographs, with the selected product in focus. The photographs remain flat images; the display, lighting and stage create the spatial presentation.",
+      "request": "Discuss this bag",
+      "noFiles": "Choose supported image files to preview.",
+      "limit": "Up to 40 local images can be previewed at once.",
+      "names": {
+        "photo-1": "Compact zip case",
+        "photo-2": "Carry handle case",
+        "photo-3": "Cream wristlet case",
+        "photo-4": "Compartment organizer",
+        "photo-5": "Round open case",
+        "photo-6": "Yellow round case",
+        "photo-7": "Blue patterned case",
+        "photo-8": "Open storage case",
+        "photo-9": "Pink round case",
+        "photo-10": "Pink open case",
+        "photo-11": "Cream wristlet visualization",
+        "photo-12": "Collection visualization"
+      },
+      "galleryCaptions": [
+        "Inspection and finishing reference",
+        "Production workstation reference",
+        "Bag assembly reference",
+        "Finished product handling reference"
+      ]
+    }
+  },
   oemOdm: {
     "hero": {
       "eyebrow": "OEM / ODM · THE DESIGN ATELIER",
